@@ -88,72 +88,81 @@
 
         <div class="container-fluid">
             <div class="row">
-                <ul class="nav nav-tabs justify-content-center">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#miniaturas">
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="a" role="tab" aria-controls="home-tab-pane" aria-selected="true">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
                             <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
                         </svg>
-                    </a>
+                      </a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#fullpost">
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="a" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
                             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
                         </svg>
                     </a>
                     </li>
                 </ul>
-            </div>
-            <div class="row" id="miniaturas">
-                <div class="col-4">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-2">
-                </div>
-                <div class="col-4">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="object-fit-contain img-thumbnail mt-2 mb-2">
-                </div>
-                <div class="col-4">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-2">
-                </div>
-                <div class="col-4">
-                  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-2">
-              </div>
-              <div class="col-4">
-                  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mt-2 mb-2">
-              </div>
-              <div class="col-4">
-                  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-2">
-              </div>
-              <div class="col-4">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-4">
-            </div>
-            <div class="col-4">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mt-2 mb-4">
-            </div>
-            <div class="col-4">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-4">
-            </div>  
-        </div>
-        <div class="container-fluid mb-4">
-          <div class="row" id="fullpost">
-            <div class="col-4"></div>
-            <div class="col-4">
-              <div class="card" style="width: 200pix;">
-                <div class="card-header">
-                  <div class="row">
-                    <div class="col-10"><h4>Fiesta Dog!!!</h4></div>
-                    <div class="col-2"><h6>05/13</h6></div>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="row" id="home-tab-pane">
+                      <div class="col-4">
+                          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-2">
+                      </div>
+                      <div class="col-4">
+                          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="object-fit-contain img-thumbnail mt-2 mb-2">
+                      </div>
+                      <div class="col-4">
+                          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-2">
+                      </div>
+                      <div class="col-4">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-2">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mt-2 mb-2">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-2">
+                    </div>
+                    <div class="col-4">
+                      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail ml-2 mt-2 mb-4">
                   </div>
-                </div>
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="card-img-top">
-                <div class="card-body">
-                <p class="card-text"><strong>154 Likes</strong><br>Increible perro fiestero utilizando anteojos increibles!!!</p>
+                  <div class="col-4">
+                      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mt-2 mb-4">
+                  </div>
+                  <div class="col-4">
+                      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="img-thumbnail mr-2 mt-2 mb-4">
+                  </div>  
               </div>
+                  </div>
+                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="container-fluid mb-4">
+                      <div class="row" id="profile-tab-pane">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                          <div class="card" style="width: 200pix;">
+                            <div class="card-header">
+                              <div class="row">
+                                <div class="col-10"><h4>Fiesta Dog!!!</h4></div>
+                                <div class="col-2"><h6>05/13</h6></div>
+                              </div>
+                            </div>
+                            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/perros-vivir-mas-anos-1669733501.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <p class="card-text"><strong>154 Likes</strong><br>Increible perro fiestero utilizando anteojos increibles!!!</p>
+                          </div>
+                        </div>
+                       <div class="col-4"></div>
+                      </div>
+                    </div>
+                </div>
+                
+                  </div>
+                </div>  
             </div>
-           <div class="col-4"></div>
-          </div>
-        </div>
-    </div>
+            
+       
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
